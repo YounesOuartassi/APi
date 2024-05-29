@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
 using MySql.Data.MySqlClient;
+using Microsoft.Extensions.Configuration;
+
 
 namespace MySqlApp
 {
@@ -19,17 +21,17 @@ namespace MySqlApp
                 connection.Open();
 
                 // Exemple de requête de sélection
-                string query = "SELECT * FROM MaTable";
+                string query = "SELECT * FROM match";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 MySqlDataReader reader = command.ExecuteReader();
 
                 while (reader.Read())
                 {
                     // Manipulez les données ici, par exemple :
-                    Console.WriteLine($"ID: {reader.GetInt32(0)}, Nom: {reader.GetString(1)}");
+                    Console.WriteLine($"id: {reader.GetInt32(0)}, home_team_api_id: {reader.GetInt32(1)}");
                 }
 
-                reader.Close();
+
             }
         }
     }
