@@ -21,15 +21,20 @@ namespace MySqlApp
                 connection.Open();
 
                 // Exemple de requête de sélection
-                string query = "SELECT * FROM match";
+                string query = "SELECT * FROM player";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 MySqlDataReader reader = command.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    // Manipulez les données ici, par exemple :
-                    Console.WriteLine($"id: {reader.GetInt32(0)}, home_team_api_id: {reader.GetInt32(1)}");
+                    // Utilisez GetInt32() pour récupérer la valeur entière
+                    int id = reader.GetInt32(0);
+                    int homeTeamApiId = reader.GetInt32(1);
+
+                    // Affichez les valeurs entières
+                    Console.WriteLine($"id: {id}, home_team_api_id: {homeTeamApiId}");
                 }
+
 
 
             }
