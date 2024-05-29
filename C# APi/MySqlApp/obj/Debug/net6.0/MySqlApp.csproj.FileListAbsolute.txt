@@ -1,0 +1,5 @@
+C:\Users\oiyou\Documents\etudes23.4\c#\C# APi\MySqlApp\obj\Debug\net6.0\MySqlApp.csproj.AssemblyReference.cache
+C:\Users\oiyou\Documents\etudes23.4\c#\C# APi\MySqlApp\obj\Debug\net6.0\MySqlApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oiyou\Documents\etudes23.4\c#\C# APi\MySqlApp\obj\Debug\net6.0\MySqlApp.AssemblyInfoInputs.cache
+C:\Users\oiyou\Documents\etudes23.4\c#\C# APi\MySqlApp\obj\Debug\net6.0\MySqlApp.AssemblyInfo.cs
+C:\Users\oiyou\Documents\etudes23.4\c#\C# APi\MySqlApp\obj\Debug\net6.0\MySqlApp.csproj.CoreCompileInputs.cache
